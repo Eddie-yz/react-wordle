@@ -42,12 +42,12 @@ export const findFirstUnusedReveal = (word: string, guesses: string[]) => {
 
 export const getWordOfDay = () => {
   // January 1, 2022 Game Epoch
-  const epochMs = new Date('January 1, 2022 00:00:00').valueOf()
-  var now = Date.now()
+  var epochMs = new Date('January 1, 2022 00:00:00').valueOf()
+  const now = Date.now()
   var timezoneIndicator = new Date().getTimezoneOffset()
   // Beijing timezone is -480
   if (timezoneIndicator !== -480) {
-    now = now + (timezoneIndicator - (-480)) * 60 * 1000
+    epochMs = epochMs - (timezoneIndicator - (-480)) * 60 * 1000
   }
   const msInDay = 86400000
   const index = Math.floor((now - epochMs) / msInDay)
