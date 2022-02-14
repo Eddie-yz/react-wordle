@@ -1,6 +1,6 @@
 export const GAME_TITLE = process.env.REACT_APP_GAME_NAME!
 
-export const WIN_MESSAGES = ['Kiss Eve!', 'Kiss Eve hard!!', 'You are sooooooo good, Eve!', 'I wanna kiss you fiercely, Eve.']
+export const WIN_MESSAGES = ['Who is this smart little gril', 'Kiss Eve!', 'Kiss Eve hard!!', 'You are sooooooo good, Eve!', 'I wanna kiss you fiercely, Eve.', 'Oh, my little genius!']
 export const GAME_COPIED_MESSAGE = "Don't send this to anyone other than Lele!!"
 export const ABOUT_GAME_MESSAGE = 'About this game'
 export const NOT_ENOUGH_LETTERS_MESSAGE = 'Not enough letters'
